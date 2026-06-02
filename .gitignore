@@ -5,6 +5,7 @@ test_settings.txt
 __pycache__/
 "myenv/Lib/site-packages/torch/lib/"
 myenv/
+venv/
 .ipynb_checkpoints
 env/
 qruns_*.db

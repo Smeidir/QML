@@ -18,10 +18,10 @@ problem = MaxCutProblem()
 
 settings = {
     "backend_mode":        ["statevector"],
-    "qaoa_variant":        ["multiangle"],
+    "qaoa_variant":        ["vanilla"],
     "param_initialization":["uniform"],
     "optimizer":           ["COBYLA"],
-    "depth":               [1,2,3,4,5,6,7],
+    "depth":               [2],
     "warm_start":          [False],
     "lagrangian_multiplier": [2],
     "problem_type":        ["minvertexcover"],
@@ -29,14 +29,6 @@ settings = {
     "graph_degree":         [3],
     "graph_weighted":        [True]
 }
-#Configure graphs here:
-
-
-
-#graph_paths = json.load(open("graph_paths.json"))   # {'paper1_0': '/scratch/…'}
-
-# Filter out specific graphs that should be excluded
-#graph_paths = {k: v for k, v in graph_paths.items() if k not in ["paper1_0","paper1_3"]}
 
 
 # ----------------------------------------------------------------------
