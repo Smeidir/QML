@@ -273,23 +273,6 @@ class QAOArunner():
 
 
 
-
-    def draw_objective_value(self):
-        """
-        Draws the objective value function evolution over time.
-        Must be called after run()
-        """
-        plt.figure(figsize=(12,6))
-        plt.plot(self.objective_func_vals)
-        plt.xlabel("Iteration")
-        plt.ylabel("Cost")
-        plt.show()
-
-    def plot_result(self):
-        colors = ["tab:grey" if i == 0 else "tab:purple" for i in self.solution]
-        pos, default_axes = rx.spring_layout(self.graph), plt.axes(frameon=True)
-        rx.visualization.mpl_draw(self.graph, node_color=colors, node_size=100, alpha=0.8, pos=pos, with_labels=True)
-
     def calculate_solution(self): 
 
         final_distribution_int = self.get_bitstring_probabilities()

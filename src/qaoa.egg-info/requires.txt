@@ -1,7 +1,0 @@
-qiskit
-qiskit-aer
-qiskit-ibm-runtime
-qiskit-optimization
-matplotlib
-numpy
-pytest

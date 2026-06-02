@@ -57,7 +57,6 @@ class Runner:
 
         graph_b64 = cfg.pop("graph_pickle_b64")
         graph_obj = pickle.loads(base64.b64decode(graph_b64.encode("ascii")))
-        qaoa = QAOArunner(graph_obj, **cfg)
         qaoa = QAOArunner(graph_obj, **cfg)   # cfg now only has QAOA kwargs
         qaoa.build_circuit()
         qaoa.run()
