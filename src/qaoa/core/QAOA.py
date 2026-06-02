@@ -18,7 +18,6 @@ from src.qaoa.core.ansatz_constructor import build_ansatz
 from src.qaoa.core.optimizer_strategies import (
     NoOptimizerStrategy, StatevectorOptimizer,  EstimatorOptimizer
 )
-from qiskit_ibm_runtime.options import DynamicalDecouplingOptions, TwirlingOptions
 
 
 
@@ -322,13 +321,7 @@ class QAOArunner():
         return bitstring_probs
     
 
-    def _set_error_mitigation(self,backend):
-        
-        #print(backend.options)
-        #dd_options = DynamicalDecouplingOptions(enable=True, sequence_type="XY4")
-        #twirling_options = TwirlingOptions(enable_gates=True, num_randomizations="auto")
-        #backend.options.update(dynamical_decoupling=dd_options, twirling=twirling_options)
-        pass
+
 
 
     def get_prob_measure_optimal(self):
