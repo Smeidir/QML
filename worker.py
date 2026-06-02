@@ -1,5 +1,5 @@
 # worker.py  ────────────────────────────────────────────────────────────
-import ray, json, pickle, pathlib, pandas as pd, time, socket, base64
+import ray, json, pickle,socket, base64
 from pathlib import Path
 from src.qaoa.core.QAOA import QAOArunner
 import json_tricks
